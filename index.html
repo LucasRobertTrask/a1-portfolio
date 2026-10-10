@@ -10,33 +10,40 @@ EMAIL: traskl@uci.edu
   <meta charset="utf-8">
   <meta name="author" content="Lucas Trask">
   <meta name="description" content="Lucas Trask's portfolio website">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
   <title>Lucas Trask Portfolio</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="format.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <h1>
-    Hello!
-  </h1>
-  <h1>
-    Im Lucas Trask
-  </h1>
-  <img src="profile-pic.jpg" alt="Lucas Trask" width="470" height="500">
+  <div id="title" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        Hello!
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        My name is Lucas Trask
+      </div>
+    </div>
+  </div>
+  <img class="self" src="profile-pic.jpg" alt="Lucas Trask" width="470" height="500">
   <h2>
     Here Is Some Information About Me
   </h2>
-  <div id="Education">
-    <h3>
-      Education
-    </h3>
-    <ul>
-      <li>University of California, Irvine</li>
-      <ul>
-        <li>Major: Software Engineering</li>
-        <li>Projected Graduation Year: 2028</li>
-        <li>GPA: 3.937</li>
-        <li>Notable Coursework:</li>
-        <table>
+  <div id="Education" class="container">
+    <h3>Education</h3>
+    <div class="row">
+      <div id="UCI" class="col-md-6">
+        <h5>University of California, Irvine</h5>
+        <ul>
+          <li>Major: Software Engineering</li>
+          <li>Projected Graduation Year: 2028</li>
+          <li>GPA: 3.937</li>
+          <li>Notable Coursework:</li>
+        </ul>
+        <table class="table">
           <tr>
             <th>Course</th>
             <th>Content</th>
@@ -83,102 +90,105 @@ EMAIL: traskl@uci.edu
             <td>IP</td>
           </tr>
         </table>
-      </ul>
-      <li>Costa Mesa High School</li>
-      <ul>
-        <li>Graduated: 2024</li>
-        <li>GPA: 4.3</li>
-        <li>Sports:</li>
+      </div>
+      <div id="HS" class="col-md-6">
+        <h5>Costa Mesa High School</h5>
         <ul>
-          <li>Varsity Swim Team</li>
+          <li>Graduated: 2024</li>
+          <li>GPA: 4.3</li>
+          <li>Sports:</li>
           <ul>
-            <li>4 Years</li>
-            <li>
-              <a href="https://www.latimes.com/socal/daily-pilot/sports/story/2023-05-06/costa-mesa-boys-swimming-makes-history-with-first-cif-championship">
-                CIF Division 3 Championship
-              </a>
-            </li>
-            <li>
-              <a href="https://www.latimes.com/socal/daily-pilot/sports/story/2024-05-04/costa-mesa-boys-swim-team-repeats-as-cif-champion">
-                CIF Division 2 Championship
-              </a>
-            </li>
-            <li>The only male CIF team to ever go back to back across divisions</li>
-          </ul>
-          <li>Varsity Water Polo Team</li>
-          <ul>
-            <li>4 Years</li>
-            <li>CIF Division 3 Quarterfinalist</li>
+            <li>Varsity Swim Team</li>
+            <ul>
+              <li>4 Years</li>
+              <li>
+                <a href="https://www.latimes.com/socal/daily-pilot/sports/story/2023-05-06/costa-mesa-boys-swimming-makes-history-with-first-cif-championship">
+                  CIF Division 3 Championship
+                </a>
+              </li>
+              <li>
+                <a href="https://www.latimes.com/socal/daily-pilot/sports/story/2024-05-04/costa-mesa-boys-swim-team-repeats-as-cif-champion">
+                  CIF Division 2 Championship
+                </a>
+              </li>
+              <li>The only male CIF team to ever go back to back across divisions</li>
+            </ul>
+            <li>Varsity Water Polo Team</li>
+            <ul>
+              <li>4 Years</li>
+              <li>CIF Division 3 Quarterfinalist</li>
+            </ul>
           </ul>
         </ul>
-      </ul>
-    </ul>
+      </div>
+    </div>
   </div>
-  <div id="Hobbies"> 
-    <h3>
-      Hobbies
-    </h3>
-    <ul>
+  <div id="hobbies-professional-row" class="row">
+    <div id="hobbies" class="container col-md-5"> 
+      <h3>
+        Hobbies
+      </h3>
+      <ul>
       <li>Piano</li>
       <ul>
-        <li>6 years</li>
-        <li>self-taught</li>
-      </ul>
-      <li>Surfing</li>
-      <ul>
-        <li>1 year</li>
-      </ul>
-      <li>Gaming</li>
-      <ul>
-        <li>Pretty much any game</li>
-      </ul>
-      <li>Programming</li>
-      <ul>
-        <li>Languages</li>
-        <ul>
-          <li>Python</li>
-          <li>C/C++</li>
-          <li>Java</li>
-          <li>Javascript (WIP)</li>
-          <li>HTML (WIP)</li>
-          <li>CSS (WIP)</li>
-          <li>SQL (WIP)</li>
+          <li>6 years</li>
+          <li>self-taught</li>
         </ul>
-        <li>Projects</li>
-        <ul>
-          <li>(WIP)</li>
-        </ul>
-      </ul>
-    </ul>
-  </div>
-  <div id="Professional">
-    <h3>
-      Professional
-    </h3>
-    <ul>
-      <li>
-        <a href="">
-          Resume
-        </a>
-      </li>
-      <li>Quick Overview</li>
-      <ul>
-        <li>Pool Lifeguarding</li>
-        <ul>
-          <li>2 years</li>
-        </ul>
-        <li>Audios Visual Technician Assistant</li>
+        <li>Surfing</li>
         <ul>
           <li>1 year</li>
         </ul>
-        <li>AI Trainer</li>
+        <li>Gaming</li>
         <ul>
-          <li>Currently Employed</li>
+          <li>Pretty much any game</li>
+        </ul>
+        <li>Programming</li>
+        <ul>
+          <li>Languages</li>
+          <ul>
+            <li>Python</li>
+            <li>C/C++</li>
+            <li>Java</li>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SQL (WIP)</li>
+          </ul>
+          <li>Projects</li>
+          <ul>
+            <li>(WIP)</li>
+          </ul>
         </ul>
       </ul>
-    </ul>
+    </div>
+    <div id="professional" class="container col-md-5">
+      <h3>
+        Professional
+      </h3>
+      <ul>
+        <li>
+          <a href="https://docs.google.com/document/d/14XTzj1xu8NfaE9x6yWqipvbPF5eHEyR4G_2AVShBRG0/edit?usp=sharing">
+            Resume
+          </a>
+        </li>
+        <li>Quick Overview</li>
+        <ul>
+          <li>Pool Lifeguarding</li>
+          <ul>
+            <li>2 years</li>
+          </ul>
+          <li>Audios Visual Technician Assistant</li>
+          <ul>
+            <li>1 year</li>
+          </ul>
+          <li>AI Trainer</li>
+          <ul>
+            <li>Currently Employed</li>
+          </ul>
+        </ul>
+      </ul>
+    </div>
   </div>
-
   <p>
     <a href="http://validator.w3.org/check?uri=referer">
        W3C validator

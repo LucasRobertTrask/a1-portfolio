@@ -1,0 +1,53 @@
+#title {
+    font-weight: 1000;
+    font-size: 50px;
+    text-align: center;
+    border: 0px solid #ffffff;
+}
+
+html {
+    background-color: #191919;
+}
+
+.self {
+    border: 5px solid #ffffff;
+    display: block;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #000000;
+    font-family: "FreeMono", monospace;
+    color: #ffffff;
+    border: 5px solid #ffffff;
+    margin: 30px;
+}
+
+.container {
+    border: 5px solid #ffffff;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+h3 {
+    font-weight: 1000;
+    font-size: 30px;
+    text-align: center;
+}
+
+.table td,
+.table th {
+    background-color: #181818;
+    color: #ffffff;
+}
+
+table {
+    border: 2px solid #ffffff;
+}
+
+h2 {
+    font-weight: 1000;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
