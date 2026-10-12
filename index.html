@@ -11,188 +11,244 @@ EMAIL: traskl@uci.edu
   <meta name="author" content="Lucas Trask">
   <meta name="description" content="Lucas Trask's portfolio website">
   <title>Lucas Trask Portfolio</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
   <link rel="stylesheet" href="format.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-  <div id="title" class="container">
-    <div class="row">
-      <div class="col-md-12">
-        Hello!
-      </div>
+  <!-- Creates the top bar and links each label to its repsective text location -->
+   <!-- Links to elements inside of the details to open the dropdowns -->
+  <nav class="topbar" aria-label="Main navigation">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#about-me">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#resume">Resume</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main page with image and background -->
+  <section class="profile">
+    <div class="title">
+      <h1>Lucas Trask</h1>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        My name is Lucas Trask
-      </div>
+    <img class="self" src="profile-pic.jpg" alt="Lucas Trask" width="470" height="500">
+    <div class="socials">
+      <!-- rel="noopener noreferrer" is used for saftey but is no longer necessary since most browsers now use this automatically -->
+      <a href="https://www.instagram.com/lucas.trask/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <span class="fa-brands fa-instagram"></span>
+      </a>
+      <a href="https://www.linkedin.com/in/lucas-trask-20b0a93b5/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <span class="fa-brands fa-linkedin"></span>
+      </a>
+      <a href="https://app.joinhandshake.com/profiles/7jys68" target="_blank" rel="noopener noreferrer" aria-label="Handshake">
+        <span class="fa-regular fa-handshake"></span>
+      </a>
     </div>
-  </div>
-  <img class="self" src="profile-pic.jpg" alt="Lucas Trask" width="470" height="500">
-  <h2>
-    Here Is Some Information About Me
-  </h2>
-  <div id="Education" class="container">
-    <h3>Education</h3>
-    <div class="row">
-      <div id="UCI" class="col-md-6">
-        <h5>University of California, Irvine</h5>
-        <ul>
-          <li>Major: Software Engineering</li>
-          <li>Projected Graduation Year: 2028</li>
-          <li>GPA: 3.937</li>
-          <li>Notable Coursework:</li>
-        </ul>
-        <table class="table">
-          <tr>
-            <th>Course</th>
-            <th>Content</th>
-            <th>Grade</th>
-          </tr>
-          <tr>
-            <td>ICS 33</td>
-            <td>Intermediate Programming in Python</td>
-            <td>A</td>
-          </tr>
-          <tr>
-            <td>ICS 45J</td>
-            <td>Programming in Java</td>
-            <td>A</td>
-          </tr>
-          <tr>
-            <td>ICS 45C</td>
-            <td>Programming in C/C++</td>
-            <td>A</td>
-          </tr>
-          <tr>
-            <td>ICS 51</td>
-            <td>Introduction to Computer Organization</td>
-            <td>A</td>
-          </tr>
-          <tr> 
-            <td>ICS 46</td>
-            <td>Data Structures Implementation and Analysis</td>
-            <td>A</td>
-          </tr>
-          <tr>
-            <td>ICS 131</td>
-            <td>Human Computer Interaction</td>
-            <td>A+</td>
-          </tr>
-          <tr>
-            <td>IN4MATX 151</td>
-            <td>Project Management</td>
-            <td>A</td>
-          </tr>
-          <tr>
-            <td>IN4MATX 133</td>
-            <td>User Interaction Software</td>
-            <td>IP</td>
-          </tr>
-        </table>
-      </div>
-      <div id="HS" class="col-md-6">
-        <h5>Costa Mesa High School</h5>
-        <ul>
-          <li>Graduated: 2024</li>
-          <li>GPA: 4.3</li>
-          <li>Sports:</li>
-          <ul>
-            <li>Varsity Swim Team</li>
+  </section>
+
+  <!-- Background for the start of information -->
+  <div class="sections">
+    <h2>
+      Hi Im Lucas Trask, a Software Engineering student at the University of California, Irvine. Welcome to my portfolio.
+    </h2>
+    <div id="drop-down">
+      <!-- Details for the drop down -->
+      <details class="box">
+        <summary>
+          <h3>About Me</h3>
+        </summary>
+        <div id="about-me" class="row">
+          <div class="col-md-6">
+            <div class="about-me-text">
+              <p>
+                Hi I'm Lucas Trask. I'm from Costa Mesa, California and I currently am Attending the University of California, Irvine. I'm in my third year and I'm studying Software Engineering. I love the ocean and the beach. I've developed a passion for surfing and swimming and in general I like to stay fit and healthy. I've self-taught my self piano and have been playing for 6 years. I've developed an interest in programming over the past 4 years and love dedicating my self to solving difficult problems. I can confidently code in Python C++ and Java. I am currently learning SQL, HTML, CSS and I have some experience with Javascript. I am currently looking for a software engineering internship for the summer of 2026.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="HB-waves.webp" alt="Huntington Beach Waves">
+          </div>
+        </div>
+      </details>
+
+      <details class="box">
+        <summary>
+          <h3>Education</h3>
+        </summary>
+        <div id="education" class="row">
+          <div id="UCI-img" class="col-md-6">
+            <img src="UCI.jpg" alt="University of California, Irvine">
+          </div>
+          <div id="UCI" class="col-md-6">
+            <h4>University of California, Irvine</h4>
             <ul>
-              <li>4 Years</li>
-              <li>
-                <a href="https://www.latimes.com/socal/daily-pilot/sports/story/2023-05-06/costa-mesa-boys-swimming-makes-history-with-first-cif-championship">
-                  CIF Division 3 Championship
-                </a>
-              </li>
-              <li>
-                <a href="https://www.latimes.com/socal/daily-pilot/sports/story/2024-05-04/costa-mesa-boys-swim-team-repeats-as-cif-champion">
-                  CIF Division 2 Championship
-                </a>
-              </li>
-              <li>The only male CIF team to ever go back to back across divisions</li>
+              <li>Major: Software Engineering</li>
+              <li>Projected Graduation Year: 2028</li>
+              <li>GPA: 3.937</li>
+              <li>Notable Coursework:</li>
             </ul>
-            <li>Varsity Water Polo Team</li>
+            <div class="table-wrapper">
+              <table class="table">
+                <!-- caption, thead, tbody for accessibility -->
+                <caption class="visually-hidden">Notable coursework at UC Irvine with course content and grades</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Course</th>
+                    <th scope="col">Content</th>
+                    <th scope="col">Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ICS 33</td>
+                    <td>Intermediate Programming in Python</td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>ICS 45J</td>
+                    <td>Programming in Java</td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>ICS 45C</td>
+                    <td>Programming in C/C++</td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>ICS 51</td>
+                    <td>Introduction to Computer Organization</td>
+                    <td>A</td>
+                  </tr>
+                  <tr> 
+                    <td>ICS 46</td>
+                    <td>Data Structures Implementation and Analysis</td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>ICS 131</td>
+                    <td>Human Computer Interaction</td>
+                    <td>A+</td>
+                  </tr>
+                  <tr>
+                    <td>IN4MATX 151</td>
+                    <td>Project Management</td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>IN4MATX 133</td>
+                    <td>User Interaction Software</td>
+                    <td>IP</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="HS" class="col-md-6">
+            <h4>Costa Mesa High School</h4>
             <ul>
-              <li>4 Years</li>
-              <li>CIF Division 3 Quarterfinalist</li>
+              <li>Graduated: 2024</li>
+              <li>GPA: 4.3</li>
+              <li>Sports:
+                <ul>
+                  <li>Varsity Swim Team
+                    <ul>
+                      <li>4 Years</li>
+                      <li>
+                        <a href="https://www.latimes.com/socal/daily-pilot/sports/story/2023-05-06/costa-mesa-boys-swimming-makes-history-with-first-cif-championship">
+                          CIF Division 3 Championship
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.latimes.com/socal/daily-pilot/sports/story/2024-05-04/costa-mesa-boys-swim-team-repeats-as-cif-champion">
+                          CIF Division 2 Championship
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Varsity Water Polo Team
+                    <ul>
+                      <li>4 Years</li>
+                      <li>CIF Division 3 Quarterfinalist</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
             </ul>
-          </ul>
-        </ul>
-      </div>
+          </div>
+          <div id="HS-img" class="col-md-6">
+            <img src="CMHSFrontofCampus.png" alt="Costa Mesa High School">
+          </div>
+        </div>
+      </details>
+
+      <details class="box">
+        <summary>
+          <h3>Projects</h3>
+        </summary> 
+        <div id="projects">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>OC Surfsite</h4>
+              <p>
+                I've been working on a web application for surfing in Orange County. I plan on delivering features that allow surfers to understand the current conditions and forecasts.
+                I will tailor forecasts and current conditions based on historic data and user input about each break location and the conditions necessary for good surf.
+                Currently there exist websites that attempt to provide silimilar live data and forecasting but fail to provide the specific information about each break location neccessary for surfers to use that data and make decisions on the best times to surf.
+                I plan to fill this gap and supply users with this information such that they may learn more about different breaks and schedule the best times to surf for them.
+                Currently I have most the backend data collection and processing complete and plan on finshing the project by the end of the year. 
+                The backend pulls from multiple API's and processes the data in python. I plan to use HTML, CSS and Node.js to complete the front end website. Here is the link to the github repository.
+              </p>
+              <a href="https://github.com/LucasT613/SurfSite" target="_blank" rel="noopener noreferrer">SurfSite GitHub repository</a>
+              
+            </div>
+            <div class="col-md-6">
+              <img src="slater.jpg" alt="Kelly Slater Surfing">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <img src="Project.jpg" alt="Example Project Image">
+            </div>
+            <div class="col-md-6">
+              <h4>Project EX</h4>
+              <p>
+                More projects to come!
+              </p>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <details class="box">
+        <summary>
+          <h3>Resume</h3>
+        </summary>
+        <div id="resume">
+          <div class="resume-viewer">
+            <iframe src="General_Resume-LucasTrask.pdf" title="Lucas Trask's resume (PDF)"></iframe>
+          </div>
+
+          <p class="resume-links">
+            <!-- May open in a new tab depending on user settings -->
+            <a href="General_Resume-LucasTrask.pdf" target="_blank" rel="noopener noreferrer">Open in a new tab</a>
+          </p>
+        </div>
+      </details>
     </div>
   </div>
-  <div id="hobbies-professional-row" class="row">
-    <div id="hobbies" class="container col-md-5"> 
-      <h3>
-        Hobbies
-      </h3>
-      <ul>
-      <li>Piano</li>
-      <ul>
-          <li>6 years</li>
-          <li>self-taught</li>
-        </ul>
-        <li>Surfing</li>
-        <ul>
-          <li>1 year</li>
-        </ul>
-        <li>Gaming</li>
-        <ul>
-          <li>Pretty much any game</li>
-        </ul>
-        <li>Programming</li>
-        <ul>
-          <li>Languages</li>
-          <ul>
-            <li>Python</li>
-            <li>C/C++</li>
-            <li>Java</li>
-            <li>Javascript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SQL (WIP)</li>
-          </ul>
-          <li>Projects</li>
-          <ul>
-            <li>(WIP)</li>
-          </ul>
-        </ul>
-      </ul>
-    </div>
-    <div id="professional" class="container col-md-5">
-      <h3>
-        Professional
-      </h3>
-      <ul>
-        <li>
-          <a href="https://docs.google.com/document/d/14XTzj1xu8NfaE9x6yWqipvbPF5eHEyR4G_2AVShBRG0/edit?usp=sharing">
-            Resume
-          </a>
-        </li>
-        <li>Quick Overview</li>
-        <ul>
-          <li>Pool Lifeguarding</li>
-          <ul>
-            <li>2 years</li>
-          </ul>
-          <li>Audios Visual Technician Assistant</li>
-          <ul>
-            <li>1 year</li>
-          </ul>
-          <li>AI Trainer</li>
-          <ul>
-            <li>Currently Employed</li>
-          </ul>
-        </ul>
-      </ul>
-    </div>
-  </div>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+
 </body>
 </html>

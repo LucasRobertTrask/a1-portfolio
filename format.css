@@ -1,53 +1,256 @@
-#title {
-    font-weight: 1000;
-    font-size: 50px;
-    text-align: center;
-    border: 0px solid #ffffff;
-}
-
-html {
-    background-color: #191919;
-}
-
-.self {
-    border: 5px solid #ffffff;
-    display: block;
-    margin: 0 auto;
-}
-
 body {
-    background-color: #000000;
     font-family: "FreeMono", monospace;
-    color: #ffffff;
-    border: 5px solid #ffffff;
-    margin: 30px;
+    color: #000000;
+    background-color: #181535;
 }
 
-.container {
-    border: 5px solid #ffffff;
-    padding: 10px;
-    margin-top: 50px;
-}
-
-h3 {
-    font-weight: 1000;
-    font-size: 30px;
+/* Headings */
+h1, h2, h3, h4 {
     text-align: center;
+    font-weight: bold;
 }
 
-.table td,
-.table th {
-    background-color: #181818;
-    color: #ffffff;
-}
-
-table {
-    border: 2px solid #ffffff;
+h1 {
+    font-size: 48px;
+    margin: 32px 0 16px;
 }
 
 h2 {
-    font-weight: 1000;
-    font-size: 40px;
+    font-size: 20px;
+    margin: 32px 0;
+    color: #89dee9;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+#projects h4 {
+    margin-top: 40px;
+}
+
+/* Self image */
+.self {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #181535;
+    border-radius: 50%;
+}
+
+.about-me-text {
+    margin-top: 40px;
+}
+
+/* UCI image */
+#UCI-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #181535;
+    margin-top: 40px;
+}
+
+/* High School image */
+#HS-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #181535;
+    margin-top: 40px;
+}
+
+#about-me img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #181535;
+    margin-top: 40px;
+}
+
+#projects img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #181535;
+    margin-top: 40px;
+}
+
+/* offsets the scroll when the navbar is used */
+#about-me, #education, #projects, #resume {
+    scroll-margin-top: 100px;
+}
+
+#UCI {
+    margin-top: 40px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    --bs-border-color: #181535;
+    --bs-table-border-color: #181535;
+    border-color: #181535;
+}
+
+.table th, .table td {
+    padding: 10px 12px;
+    border: 1px solid #181535;
+    box-shadow: none;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Header row */
+.table th {
+    background-color: #2e276b;
+    color: #89dee9;
+    white-space: nowrap;
+}
+
+/* Alternating shades */
+.table td {
+    background-color: #e6e3f8;
+    color: #181535;
+}
+
+.table tbody tr:nth-child(even) td {
+    background-color: #d3cff3;
+}
+
+/* Center grade column */
+.table th:last-child,
+.table td:last-child {
     text-align: center;
-    margin-top: 50px;
+}
+
+#HS {
+    margin-top: 40px;
+}
+
+/* Socials */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 16px 0;
+    font-size: 32px;
+}
+
+.socials a {
+    color: #89dee9;
+    text-decoration: none;
+}
+
+/* Bordered sections */
+.sections {
+    height: 100%;
+    padding: 16px;
+    background-color: #2e276b;
+}
+
+#drop-down {
+    margin-bottom: 16px;
+    border: 2px solid #181535;
+    background-color: #bdb7ee;
+}
+
+/* Change cursor to indicate its a drop down */
+summary {
+    cursor: pointer;
+    padding: 4px 0;
+}
+
+.box {
+    border: 2px solid #181535;
+    background-color: #bdb7ee;
+    padding: 16px;
+}
+
+/* Fixes github url from going out of the box on small screens */
+.box a {
+    overflow-wrap: anywhere;
+}
+
+.title {
+    color: #89dee9;
+    text-align: center;
+}
+
+main {
+    padding-bottom: 32px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+/* Table */
+.table th {
+    white-space: nowrap;
+}
+
+/* Top bar */
+.topbar {
+    height: 56px;
+    background-color: #0b0813;
+    text-align: right;
+    margin-top: 5px;
+    /* makes the text centered vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.topbar a {
+    color: #89dee9;
+}
+
+/* Background */
+.profile {
+    padding: 48px 16px;
+    /* If image doesnt load fall back to a safe color */
+    background-color: #2e276b;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    border-top: 5px solid #181535;
+    border-bottom: 5px solid #181535;
+}
+
+.resume-viewer iframe {
+    width: 100%;
+    height: 800px;
+    border: 3px solid #181535;
+    display: block;
+}
+
+.resume-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 16px 0 0;
+}
+
+@media (max-width: 767px) {
+    .resume-viewer iframe {
+        height: 500px;
+    }
+    .topbar {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .box {
+        padding: 24px;
+    }
 }
