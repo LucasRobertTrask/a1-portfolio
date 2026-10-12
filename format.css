@@ -217,6 +217,7 @@ ul {
     margin: 16px 0 0;
 }
 
+/* Adjusts some things when the screen gets small */
 @media (max-width: 767px) {
     .resume-viewer iframe {
         height: 500px;
@@ -226,6 +227,7 @@ ul {
     }
 }
 
+/* Adjusts some things when the screen gets big */
 @media (min-width: 768px) {
     .box {
         padding: 24px;
