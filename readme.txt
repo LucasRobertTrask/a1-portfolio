@@ -68,4 +68,4 @@ I did not consult any other classmates for this assignment.
 
 
 7. Is there anything special we need to know in order to run your code?
-There is nothing special you would need to know.
+I using Font-Awesome and the code loads it from a CDN so it needs to be connected to the internet to load these icons but most of the page still works offline.
